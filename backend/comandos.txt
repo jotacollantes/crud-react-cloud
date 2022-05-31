@@ -1,0 +1,20 @@
+#para inicializar el package json
+npm init -y
+
+##################
+Para instalar los paquetes necesarios del proyecto
+express (framework para usar nodejs) 
+mongoose (para conectarse a la base de datos) 
+jsonwebtoken (para la seguridad en logn de usario) 
+bcrypt (para encriptar las claves)
+morgan (ver en consola las conexiones)
+cors (permitir al frontend que acceda al backend)
+##################
+
+npm i express mongoose jsonwebtoken bcrypt morgan cors 
+
+#Para instalar nodemon como dependencia de desarrollo osea solo se va usar en etapa de desarrollo cuando ejecutemos el backend osea cuando se cree el build no se va a considerar
+npm install --save-dev nodemon
+
+#como ya esta configurado el script de arranque con nodemon podemos usar el siguiente comando:
+npm run dev

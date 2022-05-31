@@ -1,0 +1,10 @@
+#Para crear el proyecto creat
+#npm init react-app frontend
+npx create-react-app frontend
+#Para instalar los paquetes sweetalert2 axios 
+npm i sweetalert2 axios
+#Para instalar el manejador de rutas
+npm i react-router-dom 
+#Para instalar los paquetes de react-responsive-modal y sus dependencias
+#npm install react-responsive-modal --legacy-peer-deps
+yarn add react-responsive-modal
