@@ -1,0 +1,4 @@
+#Para ver la configuracion list
+git config --list
+#para ver los cambios
+git status

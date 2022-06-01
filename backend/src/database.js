@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
-const URI="mongodb://localhost/prueba";
+// const URI="mongodb://localhost/prueba";
+const URI="mongodb+srv://jjcollantes:Campeon2022*@cluster0.ntcmp.mongodb.net/crud"
 
 const connectDB=async() =>{
 try {
