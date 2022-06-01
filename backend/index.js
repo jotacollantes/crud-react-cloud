@@ -3,7 +3,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors";
 import connectDB from './src/database.js';
-import route from "./src/routes/usuario.route.js";
+import usuarioRoute from "./src/routes/usuario.route.js";
 import empleadoRoute from "./src/routes/empleado.route.js";
 connectDB();
 
@@ -23,7 +23,7 @@ app.use(cors({origin : "*"}));
 // })
 // });
 
-app.use('/api',route);
+app.use('/api',usuarioRoute);
 app.use('/api/empleado',empleadoRoute);
 app.listen(app.get('port'), 
     console.log('servidor escuchando en el puerto ' , app.get('port') ));
