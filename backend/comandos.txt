@@ -18,3 +18,5 @@ npm install --save-dev nodemon
 
 #como ya esta configurado el script de arranque con nodemon podemos usar el siguiente comando:
 npm run dev
+
+#el archivo index.js hay que moverlo desde ./src/ a la raiz ./

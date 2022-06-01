@@ -2,9 +2,9 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import connectDB from './database.js';
-import route from "./routes/usuario.route.js";
-import empleadoRoute from "./routes/empleado.route.js";
+import connectDB from './src/database.js';
+import route from "./src/routes/usuario.route.js";
+import empleadoRoute from "./src/routes/empleado.route.js";
 connectDB();
 
 

@@ -54,7 +54,8 @@ export const UserProvider=(props)=>
             //console.log(dataUser);
             
             //Pasamos como parametro lo almacenado en dataUser
-            const resp = await axios.post('http://localhost:4000/api/login',dataUser)
+            // const resp = await axios.post('http://localhost:4000/api/login',dataUser)
+            const resp = await axios.post('/login',dataUser)
             //Para que solo aparezca el elemento data de la respuesta enviada por el backend como en el postman
              
             // data:
@@ -126,7 +127,7 @@ export const UserProvider=(props)=>
             console.log(dataUser);
             
             //Pasamos como parametro lo almacenado en dataUser
-            const resp = await axios.post('http://localhost:4000/api/register',dataUser)
+            const resp = await axios.post('/register',dataUser)
             //Para que solo aparezca el elemento data de la respuesta enviada por el backend como en el postman
              
             // data:

@@ -2,3 +2,9 @@
 git config --list
 #para ver los cambios
 git status
+#para actualizar los cambios
+git add .
+#para etiquetar con commit
+git commit -m "Apuntando hacia Atlas"
+#Para subir a github
+git push -u origin main
