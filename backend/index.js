@@ -23,7 +23,7 @@ app.use(cors({origin : "*"}));
 // })
 // });
 
-app.use('/api',route);
+//app.use('/api',route);
 app.use('/api/empleado',empleadoRoute);
 app.listen(app.get('port'), 
     console.log('servidor escuchando en el puerto ' , app.get('port') ));
