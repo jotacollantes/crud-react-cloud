@@ -15,7 +15,8 @@ import Register from './components/Register';
 import { useUser } from './context/UserContext';
 
 //Aqui se le dice a axios cual es la ruta default 
-axios.defaults.baseURL='http://localhost:4000/api'
+// axios.defaults.baseURL='http://localhost:4000/api'
+axios.defaults.baseURL='https://backend-dusky-mu.vercel.app/api'
 
 function App() {
 //Para traer la funcion loginUser() del context lo hacemos a travez de la funcion useUser()
