@@ -60,13 +60,13 @@ useEffect(()=>{
 const deleteEmpleado= (id)=>
 {
   Swal.fire({
-    title: 'Esta seguro?',
-    text: "Esta accion no es reversible!",
+    title: 'Are you sure?',
+    text: "This action is not reversible!",
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Si, Eliminar!'
+    confirmButtonText: 'Yes, Delete!'
   }).then(async (result) => {
     if (result.isConfirmed) {
     // const {data} = await axios.delete("http://localhost:4000/api/empleado/delete/"+id,
@@ -151,7 +151,7 @@ return (
               <input
               className='form-control' 
               type="search" 
-              placeholder='Buscar...'
+              placeholder='Search...'
               aria-label='Search' 
               required
               onChange={(e)=> search(e.target.value)}

@@ -18,13 +18,14 @@ export const ModalActions = ({
         nombres:"",
         apellidos:"",
         id:"",
-        tcontrato:"Fijo"
+        tcontrato:"Permanent"
     }
 
     // Declaro el Hook dataEmpleado
     const [dataEmpleado,setDataEmpleado]=useState(initialState)
     //Declaro un objeto tipo arreglo
-    const tcontratos=["Fijo","Temporal","Practicante"]
+    //const tcontratos=["Fijo","Temporal","Practicante"]
+    const tcontratos=["Permanent","Temporary","Practicing"]
 
     // Creamos un efecto para configurar el hook dataEmpleado con los datos.
     // En caso de que sea actualizacion edit==true configuramos el hook dataEmpleados con los datos del empleado que recibimos en el props en este caso empleado, caso contrario dataEmpleado sera igual a initialState
@@ -97,12 +98,12 @@ export const ModalActions = ({
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quas molestiae animi cupiditate esse eaque non! Suscipit alias ipsum odio impedit ipsa, voluptatibus vel nisi non earum tempora sint nobis.</p> */}
     <div className="card">
         <div className="card-header">
-            <h5>{edit? 'Actualice empleado': 'Ingrese Empleado'}</h5>
+            <h5>{edit? 'Update employee': 'Create employee'}</h5>
         </div>
         <div className="card-body">
             <form onSubmit={actions}>
                 <div className="mb-3">
-                    <label className="form-label">Nombres</label>
+                    <label className="form-label">First Name</label>
                     <input type="text" 
                     className='form-control'
                     name='nombres'
@@ -113,7 +114,7 @@ export const ModalActions = ({
                     />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Apellidos</label>
+                    <label className="form-label">Last Name</label>
                     <input type="text" 
                     className='form-control'
                     name='apellidos'
@@ -123,7 +124,7 @@ export const ModalActions = ({
                     />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Identificacion</label>
+                    <label className="form-label">ID</label>
                     <input type="text" 
                     className='form-control'
                     name='id'
@@ -133,7 +134,7 @@ export const ModalActions = ({
                     />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Tipo de Contrato</label>
+                    <label className="form-label">Type of Contract</label>
                     <select 
                     name="tcontrato"
                     className='form-select'
@@ -155,13 +156,13 @@ export const ModalActions = ({
                     {
                     !loading?
                     (<button type="submit" className="btn btn-primary form-control">
-                    {edit? 'Actualizar': 'Grabar'}
+                    {edit? 'Update': 'Save'}
                     </button>)
                 
                     :
                     (<button type="submit" className="btn btn-primary form-control"  disabled="">
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                    {edit? 'Actualizando...': 'Guardando...'}
+                    {edit? 'Updating...': 'Saving...'}
                     </button>)
                      }
                 </div>
