@@ -105,7 +105,7 @@ userCtrl.login =async (req,res)=>{
             //     data: {...userExist._doc,password:null,token}
             // });
 
-            return messages.mensajeGeneral(res,201,true,{...userExist._doc,password:null,token},"Bienvenido");
+            return messages.mensajeGeneral(res,201,true,{...userExist._doc,password:null,token},"Welcome");
         }
 
         //Mensaje de contraseña incorrecta
