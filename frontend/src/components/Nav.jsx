@@ -9,22 +9,22 @@ export const Nav = () => {
   const {user,exit}=useUser()
   console.log(user.login);  
   return (
-    <nav className="navbar navbar-expanded-lg navbar-dark bg-dark">
-        <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
 
 
 
 
             <NavLink to="/" className="navbar-brand">
-                Inicio
+                Home
             </NavLink>
 
 
             <button className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
+            data-bs-toggle="collapse"
             aria-controls='navbarNav'
-            data-target="#navbarNav"
+            data-bs-target="#navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
             >
@@ -37,28 +37,28 @@ export const Nav = () => {
                 user.login?
                  
                 
-                <div className="navbar-collapse " id="navbarNav" >
+                <div className="collapse navbar-collapse " id="navbarNav" >
                     <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/empleados">
-                        <i className="fas fa-user"> Bienvenido {user.name}</i>
+                        <i className="fas fa-user"> Welcome {user.name}</i>
                     </NavLink>
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/" onClick={()=>exit()}>
-                        <i className="fas fa-user-times"> Salir</i>
+                        <i className="fas fa-user-times"> Logout</i>
                     </NavLink>
                     </li>
                     
                     
                     </ul>
                 </div>:
-                <div className="navbar-collapse " id="navbarNav" >
+                <div className="collapse navbar-collapse " id="navbarNav" >
                 <ul className="navbar-nav">
                 <li className="nav-item">
-                {/* <NavLink className="nav-link" to="/registro">
-                    <i className="fas fa-user-plus"> Registro</i>
-                </NavLink> */}
+                <NavLink className="nav-link" to="/registro">
+                    <i className="fas fa-user-plus">Create Boss</i>
+                </NavLink>
                 </li>
                 </ul>
             </div>
