@@ -143,7 +143,7 @@ return (
             >
             
               <i className='fas fa-plus'></i>
-              Add Empleado
+              Add Employee
             </button>
           </div>
           <div className="col-md-6 ml-auto">
@@ -166,7 +166,7 @@ return (
             <div className="col-md-12">
             <div className="card">
               <div className="card-header">
-                <h4>Empleados de {user.name}</h4>
+                <h4>Employees of {user.name}</h4>
               </div>
               
 
@@ -177,11 +177,11 @@ return (
                   <thead className='table-dark'>
                     <tr>
                       <th>#</th>
-                      <th>Nombres</th>
-                      <th>Apellidos</th>
-                      <th>Identificacion</th>
-                      <th>Tipo de Contrato</th>
-                      <th>opciones</th>
+                      <th>First Name</th>
+                      <th>last Name</th>
+                      <th>ID</th>
+                      <th>Type of contract</th>
+                      <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
