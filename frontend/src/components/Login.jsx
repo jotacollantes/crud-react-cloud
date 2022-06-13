@@ -43,7 +43,7 @@ const Login = () => {
                         <i className='fas fa-user fa-5x'></i>
                     </div>
                     <div className="card-header text-center mt-3">
-                        <h4>Inicio de sesion</h4>
+                        <h4>Sing Up</h4>
                     </div>
                     <div className="card-body">
                     {/* Cuando se ejecute el submit se tiene que ejecutar la funcion {loginUser} del userContext y hay que importarla*/}
@@ -53,7 +53,7 @@ const Login = () => {
                           loading? (<Loading />):
                           (<form onSubmit={login}>
                             <div className="mb-3">
-                                <label className="form-label">Correo</label>
+                                <label className="form-label">Email</label>
                                 <input 
                                 type="email"
                                 name="correo"
