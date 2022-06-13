@@ -32,7 +32,7 @@ const Register = () => {
   return (
     <div className="container mt-4">
         <div className="row">
-            <div className="col-med-6 mx-auto">
+            <div className="col-md-4 mx-auto">
                 <div className="card">
                     <div className="container text-center">
                         <i className='fas fa-user-plus fa-5x'></i>
