@@ -56,9 +56,9 @@ export const Nav = () => {
                 <div className="navbar-collapse " id="navbarNav" >
                 <ul className="navbar-nav">
                 <li className="nav-item">
-                <NavLink className="nav-link" to="/registro">
+                {/* <NavLink className="nav-link" to="/registro">
                     <i className="fas fa-user-plus"> Registro</i>
-                </NavLink>
+                </NavLink> */}
                 </li>
                 </ul>
             </div>
