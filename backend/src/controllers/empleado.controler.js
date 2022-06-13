@@ -28,7 +28,7 @@ empleadoCtrl.createEmpleado= async (req,res)=>{
          //const resp=await Empleado.create(data);
          //Se hace propagacion del objeto empleado para que el campo  usuario tenga el valor del request req.userid
          const resp=await Empleado.create({...data,usuario: req.userid});
-         messages.mensajeGeneral(res,200,true,resp,"Empleado Creado");
+         messages.mensajeGeneral(res,200,true,resp,"Employee Created");
     }
        
  catch (error) {
@@ -93,7 +93,7 @@ empleadoCtrl.deleteEmpleado = async (req,res) => {
         }
         //Si lo encuentra lo elimina, no se usa la funcion findAndDelete porque en caso de no existir se va por el catch, en su lugar se usa deleteOne porque podemos controlar el mensaje de que no fue encontrado
         await resp.deleteOne();
-        mensajeGeneral(res,200,true,resp,"Empleado Eliminado");
+        mensajeGeneral(res,200,true,resp,"Employee Deleted");
     }
     catch (error) 
     {
@@ -114,7 +114,7 @@ empleadoCtrl.updateEmpleado = async (req,res) => {
         }
         //Si lo encuentra lo actualiza, no se usa la funcion findAndUpdate porque en caso de no existir se va por el catch, en su lugar se usa updateOne porque podemos controlar el mensaje de que no fue encontrado
         await resp.updateOne(req.body);
-        mensajeGeneral(res,200,true,"","Empleado Actualizado");
+        mensajeGeneral(res,200,true,"","Employee Updated");
     }
     catch (error) 
     {
