@@ -38,7 +38,7 @@ const Register = () => {
                         <i className='fas fa-user-plus fa-5x'></i>
                     </div>
                     <div className="card-header text-center mt-3">
-                        <h4>Registro de Jefe</h4>
+                        <h4>Create Boss</h4>
                     </div>
                     <div className="card-body">
                     {/* Cuando se ejecute el submit se tiene que ejecutar la funcion {loginUser} del userContext y hay que importarla*/}
@@ -48,7 +48,7 @@ const Register = () => {
                     
                         (<form onSubmit={register}>
                             <div className="mb-3">
-                                <label className="form-label">Correo</label>
+                                <label className="form-label">Email</label>
                                 <input 
                                 type="email"
                                 name="correo"
@@ -76,7 +76,7 @@ const Register = () => {
                                 />
                             </div>
                             <div className="mb-3">
-                                <label className="form-label">Nombre</label>
+                                <label className="form-label">Names</label>
                                 <input 
                                 type="text"
                                 name="nombre"
@@ -88,7 +88,7 @@ const Register = () => {
                                 required
                                 />
                             </div>
-                            <button type="submit"className="form-control btn btn-primary">Grabar</button>
+                            <button type="submit"className="form-control btn btn-primary">Save</button>
                         </form>)
                         }
                     </div>
